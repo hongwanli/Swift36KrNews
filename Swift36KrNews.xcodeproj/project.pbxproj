@@ -13,6 +13,9 @@
 		F042E19D19CBDE510073C0E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F042E19C19CBDE510073C0E4 /* Images.xcassets */; };
 		F042E1A019CBDE510073C0E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F042E19E19CBDE510073C0E4 /* LaunchScreen.xib */; };
 		F042E1AC19CBDE510073C0E4 /* Swift36KrNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042E1AB19CBDE510073C0E4 /* Swift36KrNewsTests.swift */; };
+		F042E1B619CBE6B70073C0E4 /* NeoWebDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042E1B519CBE6B70073C0E4 /* NeoWebDetailVC.swift */; };
+		F042E1BA19CBE8000073C0E4 /* NeoKrNewsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042E1B919CBE8000073C0E4 /* NeoKrNewsParser.swift */; };
+		F042E1BC19CBE94E0073C0E4 /* NeoKrNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042E1BB19CBE94E0073C0E4 /* NeoKrNewsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		F042E1A519CBDE510073C0E4 /* Swift36KrNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift36KrNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F042E1AA19CBDE510073C0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F042E1AB19CBDE510073C0E4 /* Swift36KrNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift36KrNewsTests.swift; sourceTree = "<group>"; };
+		F042E1B519CBE6B70073C0E4 /* NeoWebDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoWebDetailVC.swift; sourceTree = "<group>"; };
+		F042E1B919CBE8000073C0E4 /* NeoKrNewsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoKrNewsParser.swift; sourceTree = "<group>"; };
+		F042E1BB19CBE94E0073C0E4 /* NeoKrNewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoKrNewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				F042E19519CBDE510073C0E4 /* AppDelegate.swift */,
 				F042E19719CBDE510073C0E4 /* ViewController.swift */,
+				F042E1B519CBE6B70073C0E4 /* NeoWebDetailVC.swift */,
+				F042E1B919CBE8000073C0E4 /* NeoKrNewsParser.swift */,
+				F042E1BB19CBE94E0073C0E4 /* NeoKrNewsModel.swift */,
 				F042E19919CBDE510073C0E4 /* Main.storyboard */,
 				F042E19C19CBDE510073C0E4 /* Images.xcassets */,
 				F042E19E19CBDE510073C0E4 /* LaunchScreen.xib */,
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F042E1BC19CBE94E0073C0E4 /* NeoKrNewsModel.swift in Sources */,
 				F042E19819CBDE510073C0E4 /* ViewController.swift in Sources */,
+				F042E1BA19CBE8000073C0E4 /* NeoKrNewsParser.swift in Sources */,
 				F042E19619CBDE510073C0E4 /* AppDelegate.swift in Sources */,
+				F042E1B619CBE6B70073C0E4 /* NeoWebDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +348,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xu xia (936EW9NU67)";
 				INFOPLIST_FILE = Swift36KrNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -346,7 +360,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xu xia (936EW9NU67)";
 				INFOPLIST_FILE = Swift36KrNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +421,7 @@
 				F042E1B119CBDE510073C0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F042E1B219CBDE510073C0E4 /* Build configuration list for PBXNativeTarget "Swift36KrNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				F042E1B419CBDE510073C0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
