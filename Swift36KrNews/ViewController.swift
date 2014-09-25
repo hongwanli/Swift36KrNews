@@ -16,14 +16,12 @@ class ViewController: UIViewController , UITableViewDataSource ,UITableViewDeleg
 
     @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidAppear(animated: Bool) {
-        loadNewsDataSource()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.separatorInset = UIEdgeInsetsMake(0, 10, 0, 10)
+        loadNewsDataSource()
     }
 
     func loadNewsDataSource(){
